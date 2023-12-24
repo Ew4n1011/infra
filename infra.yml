@@ -40,3 +40,10 @@
       tags:
         - ansible-infra-docker
         - ansible-infra
+
+    ###
+    ### Applications
+    ###
+    - role: hello_world
+      tags:
+        - hello_world
