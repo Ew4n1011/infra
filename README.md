@@ -13,7 +13,7 @@ If you have a spare domain name you can configure applications to be accessible 
 
 ## Available Applications
 
-* [HelloWorld]() - fill in when apps are added
+* [Nextcloud](https://nextcloud.com/) - A self-hosted Dropbox alternative
 
 ## Preconfigured Application Stacks
 

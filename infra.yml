@@ -47,3 +47,7 @@
     - role: hello_world
       tags:
         - hello_world
+
+    - role: nextcloud
+      tags:
+        - nextcloud
