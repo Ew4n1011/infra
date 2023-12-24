@@ -1,0 +1,14 @@
+---
+##  .___        _____               
+##  |   | _____/ ____\___________   
+##  |   |/    \   __\\_  __ \__  \  
+##  |   |   |  \  |   |  | \// __ \_
+##  |___|___|  /__|   |__|  (____  /
+##           \/                  \/ 
+##     i n f r a      https://github.com/Ew4n1011/infra
+
+# Add your all.yml config overrides to this file. See group_vars/all.yml for all possible settings.
+
+# Example options
+ansible_infra_hostname: infra-test
+ansible_infra_timezone: Europe/Madrid

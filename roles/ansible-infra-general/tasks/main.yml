@@ -21,7 +21,7 @@
 
 - name: Install some packages
   ansible.builtin.apt:
-    name: "{{ ansible_nas_extra_packages }}"
+    name: "{{ ansible_infra_extra_packages }}"
     state: present
   register: result
   until: result is succeeded

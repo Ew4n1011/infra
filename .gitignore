@@ -1,0 +1,6 @@
+tests/test.yml
+.vagrant
+roles/bertvv.samba
+roles/geerlingguy.docker
+roles/geerlingguy.docker_arm
+roles/geerlingguy.nfs

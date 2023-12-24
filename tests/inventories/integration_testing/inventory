@@ -1,0 +1,14 @@
+##  .___        _____               
+##  |   | _____/ ____\___________   
+##  |   |/    \   __\\_  __ \__  \  
+##  |   |   |  \  |   |  | \// __ \_
+##  |___|___|  /__|   |__|  (____  /
+##           \/                  \/ 
+##     i n f r a      https://github.com/Ew4n1011/infra
+
+
+[all]
+infra-test ansible_connection=local ansible_host=localhost
+
+[infra]
+infra-test
