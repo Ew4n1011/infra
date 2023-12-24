@@ -1,0 +1,15 @@
+---
+- name: Create ansible-infra group
+  ansible.builtin.group:
+    name: ansible-infra
+    state: present
+
+- name: Create ansible-infra user
+  ansible.builtin.user:
+    name: ansible-infra
+    state: present
+    system: yes
+    update_password: on_create
+    create_home: no
+    group: ansible-infra
+    shell: /usr/sbin/nologin

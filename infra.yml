@@ -6,10 +6,10 @@
     ###
     ### Requirements
     ###
-    - role: infra-users
+    - role: ansible-infra-users
       tags:
-        - infra-users
-        - infra
+        - ansible-infra-users
+        - ansible-infra
 
     - role: bertvv.samba
       tags:
@@ -27,3 +27,16 @@
       tags:
         - docker_arm
         - skip_ansible_lint
+
+    ###
+    ### Infra Roles
+    ###
+    - role: ansible-infra-general
+      tags:
+        - ansible-infra-general
+        - ansible-infra
+
+    - role: ansible-infra-docker
+      tags:
+        - ansible-infra-docker
+        - ansible-infra
