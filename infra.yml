@@ -44,6 +44,15 @@
     ###
     ### Applications
     ###
+
+    - role: cloudflare_ddns
+      tags:
+        - cloudflare_ddns
+
+    - role: ddns_updater
+      tags:
+        - ddns_updater
+
     - role: hello_world
       tags:
         - hello_world
