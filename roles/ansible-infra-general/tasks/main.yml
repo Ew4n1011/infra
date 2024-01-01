@@ -1,9 +1,4 @@
 ---
-- name: Set login banner
-  ansible.builtin.copy:
-    src: motd.txt
-    dest: /etc/motd
-
 - name: Update apt-cache
   ansible.builtin.apt:
     update_cache: yes
