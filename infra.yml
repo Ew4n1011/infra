@@ -51,3 +51,7 @@
     - role: nextcloud
       tags:
         - nextcloud
+        
+    - role: traefik
+      tags:
+        - traefik

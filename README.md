@@ -14,6 +14,7 @@ If you have a spare domain name you can configure applications to be accessible 
 ## Available Applications
 
 * [Nextcloud](https://nextcloud.com/) - A self-hosted Dropbox alternative
+* [Traefik](https://traefik.io/) - Web proxy and SSL certificate manager
 
 ## Preconfigured Application Stacks
 
