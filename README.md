@@ -13,8 +13,8 @@ If you have a spare domain name you can configure applications to be accessible 
 
 ## Available Applications
 
-* [Cloudflare DDNS](https://hub.docker.com/r/joshuaavalon/cloudflare-ddns/) - automatically update Cloudflare with your IP address
-* [DDNS Updater](https://github.com/qdm12/ddns-updater) - dynamic dns updater for several providers
+* [Cloudflare DDNS](https://hub.docker.com/r/joshuaavalon/cloudflare-ddns/) - Automatically update Cloudflare with your IP address
+* [DDNS Updater](https://github.com/qdm12/ddns-updater) - Dynamic dns updater for several providers
 * [Nextcloud](https://nextcloud.com/) - A self-hosted Dropbox alternative
 * [Traefik](https://traefik.io/) - Web proxy and SSL certificate manager
 
