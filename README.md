@@ -13,11 +13,14 @@ If you have a spare domain name you can configure applications to be accessible 
 
 ## Available Applications
 
-* [Cloudflare DDNS](https://hub.docker.com/r/joshuaavalon/cloudflare-ddns/) - Automatically update Cloudflare with your IP address
+* [Cloudflare DDNS](https://hub.docker.com/r/joshuaavalon/cloudflare-ddns) - Automatically update Cloudflare with your IP address
 * [DDNS Updater](https://github.com/qdm12/ddns-updater) - Dynamic dns updater for several providers
-* [Nextcloud](https://nextcloud.com/) - A self-hosted Dropbox alternative
+* [Grafana](https://grafana.com) - Query, visualize, alert on, and understand your data no matter where it’s stored (via stats role)
+* [Nextcloud](https://nextcloud.com) - A self-hosted Dropbox alternative
 * [Portainer](https://portainer.io) - For managing Docker and running custom images
-* [Traefik](https://traefik.io/) - Web proxy and SSL certificate manager
+* [Prometheus](https://prometheus.io) - Time series database and monitoring system (via stats role)
+* Stats - Monitor and visualise metrics about your machine and internet connection using Grafana, Prometheus, Telegraf and more
+* [Traefik](https://traefik.io) - Web proxy and SSL certificate manager
 
 ## Preconfigured Application Stacks
 
@@ -31,7 +34,7 @@ Infra can run anything that's in a Docker image, which is why Portainer is inclu
 
 ## What This Doesn't Do
 
-Infra doesn't set up your disk partitions, primarily because getting it wrong can be incredibly destructive. That aside, configuring partitions is usually a one-time (or very infrequent) event, so there's not much to be gained by automating it. Check out the [docs](https://ansible-nas.io/docs/) for recommended setups.
+Infra doesn't set up your disk partitions, primarily because getting it wrong can be incredibly destructive. That aside, configuring partitions is usually a one-time (or very infrequent) event, so there's not much to be gained by automating it. Check out the docs(incoming) for recommended setups.
 
 ## Installation
 

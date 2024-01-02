@@ -65,6 +65,10 @@
       tags:
         - portainer
 
+    - role: stats
+      tags:
+        - stats
+
     - role: traefik
       tags:
         - traefik
