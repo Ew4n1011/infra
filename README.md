@@ -16,6 +16,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Cloudflare DDNS](https://hub.docker.com/r/joshuaavalon/cloudflare-ddns/) - Automatically update Cloudflare with your IP address
 * [DDNS Updater](https://github.com/qdm12/ddns-updater) - Dynamic dns updater for several providers
 * [Nextcloud](https://nextcloud.com/) - A self-hosted Dropbox alternative
+* [Portainer](https://portainer.io) - For managing Docker and running custom images
 * [Traefik](https://traefik.io/) - Web proxy and SSL certificate manager
 
 ## Preconfigured Application Stacks

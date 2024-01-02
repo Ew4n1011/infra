@@ -61,6 +61,10 @@
       tags:
         - nextcloud
         
+    - role: portainer
+      tags:
+        - portainer
+
     - role: traefik
       tags:
         - traefik
