@@ -73,6 +73,10 @@
       tags:
         - portainer
 
+    - role: prowlarr
+      tags:
+        - prowlarr
+
     - role: stats
       tags:
         - stats

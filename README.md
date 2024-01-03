@@ -20,6 +20,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Jellyfin](https://jellyfin.github.io) - The Free Software Media System
 * [Nextcloud](https://nextcloud.com) - A self-hosted Dropbox alternative
 * [Portainer](https://portainer.io) - For managing Docker and running custom images
+* [Prowlarr](https://github.com/Prowlarr/Prowlarr) - Indexer aggregator for Sonarr, Radarr, Lidarr, etc.
 * [Prometheus](https://prometheus.io) - Time series database and monitoring system (via stats role)
 * Stats - Monitor and visualise metrics about your machine and internet connection using Grafana, Prometheus, Telegraf and more
 * [Traefik](https://traefik.io) - Web proxy and SSL certificate manager
