@@ -17,6 +17,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Cloudflare DDNS](https://hub.docker.com/r/joshuaavalon/cloudflare-ddns) - Automatically update Cloudflare with your IP address
 * [DDNS Updater](https://github.com/qdm12/ddns-updater) - Dynamic dns updater for several providers
 * [Grafana](https://grafana.com) - Query, visualize, alert on, and understand your data no matter where it’s stored (via stats role)
+* [Jellyfin](https://jellyfin.github.io) - The Free Software Media System
 * [Nextcloud](https://nextcloud.com) - A self-hosted Dropbox alternative
 * [Portainer](https://portainer.io) - For managing Docker and running custom images
 * [Prometheus](https://prometheus.io) - Time series database and monitoring system (via stats role)

@@ -1,0 +1,27 @@
+---
+# enable or disable the application
+jellyfin_enabled: false
+jellyfin_available_externally: false
+
+# directories
+jellyfin_config_directory: "{{ docker_home }}/jellyfin/config"
+jellyfin_media_directory: "{{ media_root }}"
+
+# permissions
+jellyfin_media_permissions: "rw"
+
+# uid / gid
+jellyfin_user_id: "0"
+jellyfin_group_id: "0"
+
+# network
+jellyfin_hostname: "jelly"
+jellyfin_port_http: "8096"
+
+# docker
+jellyfin_container_name: "jellyfin"
+jellyfin_image_name: "linuxserver/jellyfin"
+jellyfin_image_version: "latest"
+
+# specs
+jellyfin_memory: "1g"

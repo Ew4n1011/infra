@@ -37,6 +37,17 @@
   community.general.timezone:
     name: "{{ ansible_infra_timezone }}"
 
+- name: "Create media subdirectories"
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+  with_items:
+    - "{{ media_root }}/tv"
+    - "{{ media_root }}/movies"
+    - "{{ media_root }}/books"
+    - "{{ media_root }}/photos"
+    - "{{ media_root }}/documents"
+
 - name: "Permission share directories"
   ansible.builtin.file:
     path: "{{ item.path }}"
@@ -44,5 +55,5 @@
     owner: ansible-infra
     group: ansible-infra
     mode: "u=rwX,g=rwX,o=rX"
-    recurse: false
+    recurse: true
   loop: "{{ samba_shares }}"

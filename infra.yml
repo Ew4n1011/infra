@@ -61,6 +61,10 @@
       tags:
         - hello_world
 
+    - role: jellyfin
+      tags:
+        - jellyfin
+
     - role: nextcloud
       tags:
         - nextcloud
