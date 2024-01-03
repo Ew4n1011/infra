@@ -45,6 +45,10 @@
     ### Applications
     ###
 
+    - role: bazarr
+      tags:
+        - bazarr
+
     - role: cloudflare_ddns
       tags:
         - cloudflare_ddns

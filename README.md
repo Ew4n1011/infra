@@ -13,6 +13,7 @@ If you have a spare domain name you can configure applications to be accessible 
 
 ## Available Applications
 
+* [Bazarr](https://github.com/morpheus65535/bazarr) - Companion to Radarr and Sonarr for downloading subtitles
 * [Cloudflare DDNS](https://hub.docker.com/r/joshuaavalon/cloudflare-ddns) - Automatically update Cloudflare with your IP address
 * [DDNS Updater](https://github.com/qdm12/ddns-updater) - Dynamic dns updater for several providers
 * [Grafana](https://grafana.com) - Query, visualize, alert on, and understand your data no matter where it’s stored (via stats role)

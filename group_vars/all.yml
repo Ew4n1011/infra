@@ -38,35 +38,11 @@ samba_shares_root: /mnt/Volume3
 # Where stuff downloaded will be stored
 downloads_root: "{{ samba_shares_root }}/downloads"
 
-# Where your movies are stored
-movies_root: "{{ samba_shares_root }}/movies"
+# Where media is stored
+media_root: "{{ samba_shares_root }}/media"
 
-# Where your TV episodes are stored
-tv_root: "{{ samba_shares_root }}/tv"
-
-# Where torrent files are stored (picked up by Transmission for downloading)
+# Where torrent files are stored (picked up by qBittorrent for downloading)
 torrents_root: "{{ samba_shares_root }}/torrents"
-
-# Where music is stored
-music_root: "{{ samba_shares_root }}/music"
-
-# Where podcasts are stored
-podcasts_root: "{{ samba_shares_root }}/podcasts"
-
-# Where your books are stored
-books_root: "{{ samba_shares_root }}/books"
-
-# Where your audiobooks are stored
-audiobooks_root: "{{ samba_shares_root }}/audiobooks"
-
-# Where your comics are stored
-comics_root: "{{ samba_shares_root }}/comics"
-
-# Where photos are stored
-photos_root: "{{ samba_shares_root }}/photos"
-
-# Where paperless_ng consumes documents
-documents_root: "{{ samba_shares_root }}/documents"
 
 # Where personal repos and code are stored
 code_root: "{{ samba_shares_root }}/code"
@@ -84,37 +60,13 @@ samba_shares:
     browseable: yes
     path: "{{ downloads_root }}"
 
-  - name: movies
-    comment: "Movies"
+  - name: media
+    comment: "Media"
     guest_ok: yes
     public: yes
     writable: yes
     browseable: yes
-    path: "{{ movies_root }}"
-
-  - name: tv
-    comment: "TV Episodes"
-    guest_ok: yes
-    public: yes
-    writable: yes
-    browseable: yes
-    path: "{{ tv_root }}"
-
-  - name: music
-    comment: "Music"
-    guest_ok: yes
-    public: yes
-    writable: yes
-    browseable: yes
-    path: "{{ music_root }}"
-
-  - name: podcasts
-    comment: "Podcasts"
-    guest_ok: yes
-    public: yes
-    writable: yes
-    browseable: yes
-    path: "{{ podcasts_root }}"
+    path: "{{ media_root }}"
 
   - name: dump
     comment: "File dump"
@@ -123,54 +75,6 @@ samba_shares:
     writable: yes
     browseable: yes
     path: "{{ samba_shares_root }}/dump"
-
-  - name: games
-    comment: "Games"
-    guest_ok: yes
-    public: yes
-    writable: yes
-    browseable: yes
-    path: "{{ samba_shares_root }}/games"
-
-  - name: photos
-    comment: "Pictures"
-    guest_ok: yes
-    public: yes
-    writable: yes
-    browseable: yes
-    path: "{{ photos_root }}"
-
-  - name: books
-    comment: "Books"
-    guest_ok: yes
-    public: yes
-    writable: yes
-    browseable: yes
-    path: "{{ books_root }}"
-
-  - name: audiobooks
-    comment: "Audiobooks"
-    guest_ok: yes
-    public: yes
-    writable: yes
-    browsable: yes
-    path: "{{ audiobooks_root }}"
-
-  - name: comics
-    comment: "Comics"
-    guest_ok: yes
-    public: yes
-    writable: yes
-    browseable: yes
-    path: "{{ comics_root }}"
-
-  - name: documents
-    comment: "Documents"
-    guest_ok: yes
-    public: yes
-    writable: yes
-    browseable: yes
-    path: "{{ documents_root }}"
 
   - name: code
     comment: "Code"
