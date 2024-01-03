@@ -65,6 +65,10 @@
       tags:
         - jellyfin
 
+    - role: jellyseerr
+      tags:
+        - jellyseerr
+
     - role: nextcloud
       tags:
         - nextcloud
