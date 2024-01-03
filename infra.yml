@@ -77,6 +77,10 @@
       tags:
         - prowlarr
 
+    - role: sonarr
+      tags:
+        - sonarr
+
     - role: stats
       tags:
         - stats
