@@ -7,8 +7,8 @@ bazarr_data_directory: "{{ docker_home }}/bazarr/config"
 bazarr_media_directory: "{{ media_root }}"
 
 # uid/gid
-bazarr_user_id: "0"
-bazarr_group_id: "0"
+bazarr_user_id: "1001"
+bazarr_group_id: "1001"
 
 # network
 bazarr_port: "6767"

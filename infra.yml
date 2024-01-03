@@ -77,6 +77,10 @@
       tags:
         - prowlarr
 
+    - role: qbittorrent
+      tags:
+        - qbittorrent
+
     - role: radarr
       tags:
         - radarr

@@ -11,8 +11,8 @@ jellyfin_media_directory: "{{ media_root }}"
 jellyfin_media_permissions: "rw"
 
 # uid / gid
-jellyfin_user_id: "0"
-jellyfin_group_id: "0"
+jellyfin_user_id: "1001"
+jellyfin_group_id: "1001"
 
 # network
 jellyfin_hostname: "jelly"

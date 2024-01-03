@@ -21,6 +21,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Nextcloud](https://nextcloud.com) - A self-hosted Dropbox alternative
 * [Portainer](https://portainer.io) - For managing Docker and running custom images
 * [Prowlarr](https://github.com/Prowlarr/Prowlarr) - Indexer aggregator for Sonarr, Radarr, Lidarr, etc.
+* [qBittorrent](https://www.qbittorrent.org) - BitTorrent client
 * [Radarr](https://radarr.video) - For organising and downloading movies
 * [Sonarr](https://sonarr.tv) - For downloading and managing TV episodes
 * [Prometheus](https://prometheus.io) - Time series database and monitoring system (via stats role)
