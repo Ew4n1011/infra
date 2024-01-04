@@ -93,6 +93,14 @@
       tags:
         - jellyseerr
 
+    - role: minecraft-server
+      tags:
+        - minecraft-server
+
+    - role: minecraft-bedrock-server
+      tags:
+        - minecraft-bedrock-server
+
     - role: nextcloud
       tags:
         - nextcloud

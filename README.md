@@ -23,6 +23,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [healthchecks.io](https://healthchecks.io) - Ensure your machine is online and get notified otherwise
 * [Jellyfin](https://jellyfin.github.io) - The Free Software Media System
 * [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) - Open source software application for managing requests for your media library
+* [Minecraft Server](https://www.minecraft.net) - Server edition of the popular building and exploring game
 * [Nextcloud](https://nextcloud.com) - A self-hosted Dropbox alternative
 * [Portainer](https://portainer.io) - For managing Docker and running custom images
 * [Prowlarr](https://github.com/Prowlarr/Prowlarr) - Indexer aggregator for Sonarr, Radarr, Lidarr, etc.
