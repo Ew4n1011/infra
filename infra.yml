@@ -73,6 +73,10 @@
       tags:
         - glances
 
+    - role: guacamole
+      tags:
+        - guacamole
+
     - role: hello_world
       tags:
         - hello_world
