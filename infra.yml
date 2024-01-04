@@ -42,6 +42,14 @@
         - ansible-infra
 
     ###
+    ### Stacks
+    ###
+
+    - role: media
+      tags:
+        - media
+
+    ###
     ### Applications
     ###
 

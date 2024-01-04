@@ -1,0 +1,27 @@
+---
+- name: Start media stack
+  block:
+    - name: Enable media roles
+      ansible.builtin.set_fact:
+        bazarr_enabled: true
+        jellyfin_enabled: true
+        jellyseerr_enabled: true
+        prowlarr_enabled: true
+        qbittorrent_enabled: true
+        radarr_enabled: true
+        sonarr_enabled: true
+  when: media_stack_enabled is true
+
+
+- name: Stop media stack
+  block:
+    - name: Disable media roles
+      ansible.builtin.set_fact:
+        bazarr_enabled: false
+        jellyfin_enabled: false
+        jellyseerr_enabled: false
+        prowlarr_enabled: false
+        qbittorrent_enabled: false
+        radarr_enabled: false
+        sonarr_enabled: false
+  when: media_stack_enabled is false

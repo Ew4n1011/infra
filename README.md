@@ -33,7 +33,7 @@ If you have a spare domain name you can configure applications to be accessible 
 
 Infra application stacks are a number of applications deployed together and preconfigured to perform a common goal.
 
-* Logging - application logging capture and search service based on Grafana Loki.
+* Media - Mount a media server with sonarr, radarr, bazarr, jellyfin, etc.
 
 ## What This Could Do
 
