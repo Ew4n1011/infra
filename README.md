@@ -20,6 +20,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Glances](https://nicolargo.github.io/glances) - For seeing the state of your system via a web browser
 * [Grafana](https://grafana.com) - Query, visualize, alert on, and understand your data no matter where it’s stored (via stats role)
 * [Guacamole](https://guacamole.apache.org) - Web based remote desktop gateway, supports VNC, RDP and SSH
+* [healthchecks.io](https://healthchecks.io) - Ensure your machine is online and get notified otherwise
 * [Jellyfin](https://jellyfin.github.io) - The Free Software Media System
 * [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) - Open source software application for managing requests for your media library
 * [Nextcloud](https://nextcloud.com) - A self-hosted Dropbox alternative
@@ -40,7 +41,7 @@ Infra application stacks are a number of applications deployed together and prec
 
 ## What This Could Do
 
-Infra can run anything that's in a Docker image, which is why Portainer is included. A NAS configuration is a pretty personal thing based on what you download, what media you view, how many photos you take...so it's difficult to please everyone.
+Infra can run anything that's in a Docker image, which is why Portainer is included. A server configuration can be a pretty personal thing based on what you download, what media you view, how many photos you take...so it's difficult to please everyone.
 
 ## What This Doesn't Do
 

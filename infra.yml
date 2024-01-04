@@ -77,6 +77,10 @@
       tags:
         - guacamole
 
+    - role: healthchecks.io
+      tags:
+        - healthchecks.io
+
     - role: hello_world
       tags:
         - hello_world
