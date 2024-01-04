@@ -17,6 +17,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Cloudflare DDNS](https://hub.docker.com/r/joshuaavalon/cloudflare-ddns) - Automatically update Cloudflare with your IP address
 * [Code Server](https://code.visualstudio.com) - Powerful IDE from Microsoft accessible through the browser
 * [DDNS Updater](https://github.com/qdm12/ddns-updater) - Dynamic dns updater for several providers
+* [Glances](https://nicolargo.github.io/glances) - For seeing the state of your system via a web browser
 * [Grafana](https://grafana.com) - Query, visualize, alert on, and understand your data no matter where it’s stored (via stats role)
 * [Jellyfin](https://jellyfin.github.io) - The Free Software Media System
 * [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) - Open source software application for managing requests for your media library

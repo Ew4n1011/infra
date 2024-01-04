@@ -69,6 +69,10 @@
       tags:
         - ddns_updater
 
+    - role: glances
+      tags:
+        - glances
+
     - role: hello_world
       tags:
         - hello_world
