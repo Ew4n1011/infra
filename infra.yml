@@ -61,6 +61,10 @@
       tags:
         - cloudflare_ddns
 
+    - role: code-server
+      tags:
+        - code-server
+
     - role: ddns_updater
       tags:
         - ddns_updater
