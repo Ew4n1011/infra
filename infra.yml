@@ -145,6 +145,10 @@
       tags:
         - stats
 
+    - role: syncthing
+      tags:
+        - syncthing
+
     - role: traefik
       tags:
         - traefik
