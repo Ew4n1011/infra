@@ -26,6 +26,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) - Open source software application for managing requests for your media library
 * [Minecraft Server](https://www.minecraft.net) - Server edition of the popular building and exploring game
 * [Nextcloud](https://nextcloud.com) - A self-hosted Dropbox alternative
+* [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) - Scan, index and archive all your physical documents
 * [Portainer](https://portainer.io) - For managing Docker and running custom images
 * [Prowlarr](https://github.com/Prowlarr/Prowlarr) - Indexer aggregator for Sonarr, Radarr, Lidarr, etc.
 * [qBittorrent](https://www.qbittorrent.org) - BitTorrent client

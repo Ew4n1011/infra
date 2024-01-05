@@ -108,6 +108,10 @@
     - role: nextcloud
       tags:
         - nextcloud
+
+    - role: paperless-ngx
+      tags:
+        - paperless-ngx
         
     - role: portainer
       tags:
