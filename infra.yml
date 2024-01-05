@@ -152,3 +152,7 @@
     - role: traefik
       tags:
         - traefik
+
+    - role: virtual-desktop
+      tags:
+        - virtual-desktop

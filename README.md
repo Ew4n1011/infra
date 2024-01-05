@@ -38,6 +38,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * Stats - Monitor and visualise metrics about your machine and internet connection using Grafana, Prometheus, Telegraf and more
 * [Syncthing](https://syncthing.net) - Sync directories with another device
 * [Traefik](https://traefik.io) - Web proxy and SSL certificate manager
+* [Virtual Desktop](https://hub.docker.com/r/linuxserver/rdesktop) - A virtual desktop running on your server
 
 ## Preconfigured Application Stacks
 

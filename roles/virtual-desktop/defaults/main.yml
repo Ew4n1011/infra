@@ -1,0 +1,18 @@
+---
+virtual_desktop_enabled: false
+
+# uid / gid
+virtual_desktop_user_id: "1001"
+virtual_desktop_group_id: "1001"
+
+# Directories
+virtual_desktop_data_directory: "{{ docker_home }}/virtual_desktop"
+
+# Networking
+virtual_desktop_rdp_port: 3389
+
+# Container
+virtual_desktop_memory: 2g
+virtual_desktop_container_name: "virtual_desktop"
+virtual_desktop_image_name: "linuxserver/rdesktop"
+virtual_desktop_image_version: "ubuntu-xfce"

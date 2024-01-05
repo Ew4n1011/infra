@@ -1,0 +1,37 @@
+---
+- name: Start Virtual Desktop
+  block:
+    - name: Create Virtual Desktop Directories
+      ansible.builtin.file:
+        path: "{{ item }}"
+        state: directory
+      with_items:
+        - "{{ virtual_desktop_data_directory }}"
+
+    - name: Virtual Desktop Container
+      community.docker.docker_container:
+        name: "{{ virtual_desktop_container_name }}"
+        image: "{{ virtual_desktop_image_name }}:{{ virtual_desktop_image_version }}"
+        pull: true
+        security_opts:
+          - seccomp:unconfined
+        volumes:
+          - "{{ virtual_desktop_data_directory }}:/config"
+          - "{{ samba_shares_root }}:/samba:rw"
+          - "{{ docker_home }}:/docker:rw"
+          - "/var/run/docker.sock:/var/run/docker.sock"
+        ports:
+          - "{{ virtual_desktop_rdp_port }}:3389"
+        devices:
+          - /dev/dri:/dev/dri
+        restart_policy: unless-stopped
+        memory: "{{ virtual_desktop_memory }}"
+  when: virtual_desktop_enabled is true
+
+- name: Stop Virtual Desktop
+  block:
+    - name: Stop Virtual Desktop
+      community.docker.docker_container:
+        name: "{{ virtual_desktop_container_name }}"
+        state: absent
+  when: virtual_desktop_enabled is false
