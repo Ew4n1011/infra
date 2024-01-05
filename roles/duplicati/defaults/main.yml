@@ -1,0 +1,22 @@
+---
+duplicati_enabled: false
+duplicati_available_externally: false
+
+# directories
+duplicati_data_directory: "{{ docker_home }}/duplicati/config"
+
+# permissions
+duplicati_data_permissions: "rw" # set this to ro to disable the ability to restore data
+
+# uid / gid
+duplicati_user_id: "1001"
+duplicati_group_id: "1001"
+
+# network
+duplicati_port: "8200"
+duplicati_hostname: "bck"
+
+duplicati_memory: 1g
+
+# docker
+duplicati_container_name: duplicati

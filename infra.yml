@@ -69,6 +69,10 @@
       tags:
         - ddns_updater
 
+    - role: duplicati
+      tags:
+        - duplicati
+
     - role: glances
       tags:
         - glances
