@@ -31,6 +31,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Prowlarr](https://github.com/Prowlarr/Prowlarr) - Indexer aggregator for Sonarr, Radarr, Lidarr, etc.
 * [qBittorrent](https://www.qbittorrent.org) - BitTorrent client
 * [Radarr](https://radarr.video) - For organising and downloading movies
+* [Route53 DDNS](https://crazymax.dev/ddns-route53) - Automatically update AWS Route53 with your IP address
 * [Sonarr](https://sonarr.tv) - For downloading and managing TV episodes
 * [Prometheus](https://prometheus.io) - Time series database and monitoring system (via stats role)
 * Stats - Monitor and visualise metrics about your machine and internet connection using Grafana, Prometheus, Telegraf and more

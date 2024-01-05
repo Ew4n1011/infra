@@ -129,6 +129,10 @@
       tags:
         - radarr
 
+    - role: route53_ddns
+      tags:
+        - route53_ddns
+
     - role: sonarr
       tags:
         - sonarr
