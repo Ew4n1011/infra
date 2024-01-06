@@ -153,6 +153,10 @@
       tags:
         - traefik
 
+    - role: vaultwarden
+      tags:
+        - vaultwarden
+
     - role: virtual-desktop
       tags:
         - virtual-desktop

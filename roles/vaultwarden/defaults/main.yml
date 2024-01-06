@@ -1,0 +1,32 @@
+---
+vaultwarden_enabled: false
+vaultwarden_available_externally: false
+
+# directories
+vaultwarden_data_directory: "{{ docker_home }}/vaultwarden"
+
+# network
+vaultwarden_port_a: "19080"
+vaultwarden_port_b: "3012"
+vaultwarden_hostname: "vault"
+vaultwarden_ip_whitelist: "0.0.0.0/0"
+
+# specs
+vaultwarden_memory: 1g
+vaultwarden_backup_memory: 1g
+
+# docker
+vaultwarden_container_name: vaultwarden
+vaultwarden_backup_container_name: vaultwarden-backup
+
+# Keep this token secret, this is password to access admin area of your server!
+# This token can be anything, but it's recommended to use a long, randomly generated string of characters,
+# for example running openssl rand -base64 48
+
+# Also see docs on how to hash secret admin token for better security
+vaultwarden_admin_token: '$argon2id$v=19$m=65540,t=3,p=4$41nXn5v+NiPHZk/HpEu3oJdvOyz/k7+JwqASRKmwabM$149+9QA9fIAHQyU94mPMOzY5mA2PG6YIdKk/uFC2r7Q'
+
+# To create a user set this to "true", and reprovision the container by re-running the infra playbook.
+# Once you have created your user, set to "false" and run one more time.
+# Target just Vaultwarden by running: ansible-playbook -i inventory infra.yml -b -K -t vaultwarden
+vaultwarden_allow_signups: false
