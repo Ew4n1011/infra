@@ -40,6 +40,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Traefik](https://traefik.io) - Web proxy and SSL certificate manager
 * [Virtual Desktop](https://hub.docker.com/r/linuxserver/rdesktop) - A virtual desktop running on your server
 * [Watchtower](https://github.com/containrrr/watchtower) - Monitor your Docker containers and update them if a new version is available
+* [YoutubeDL-Material](https://github.com/Tzahi12345/YoutubeDL-Material) - Self-hosted YouTube downloader built on Material Design
 
 ## Preconfigured Application Stacks
 

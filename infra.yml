@@ -160,3 +160,6 @@
     - role: watchtower
       tags:
         - watchtower
+    - role: youtubedlmaterial
+      tags:
+        - youtubedlmaterial
