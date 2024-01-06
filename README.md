@@ -39,6 +39,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Syncthing](https://syncthing.net) - Sync directories with another device
 * [Traefik](https://traefik.io) - Web proxy and SSL certificate manager
 * [Virtual Desktop](https://hub.docker.com/r/linuxserver/rdesktop) - A virtual desktop running on your server
+* [Watchtower](https://github.com/containrrr/watchtower) - Monitor your Docker containers and update them if a new version is available
 
 ## Preconfigured Application Stacks
 

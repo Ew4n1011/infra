@@ -156,3 +156,7 @@
     - role: virtual-desktop
       tags:
         - virtual-desktop
+
+    - role: watchtower
+      tags:
+        - watchtower
