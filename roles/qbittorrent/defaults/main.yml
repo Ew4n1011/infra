@@ -12,7 +12,7 @@ qbittorrent_user_id: "1001"
 qbittorrent_group_id: "1001"
 
 # network
-qbittorrent_webui_port: "8090"
+qbittorrent_webui_port: "8070"
 qbittorrent_external_port: "6881"
 qbittorrent_hostname: "torrents"
 
