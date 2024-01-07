@@ -10,7 +10,7 @@
 ## Example when running from a remote workstation
 # ansible-infra ansible_host=192.168.1.30
 
-## Example when running directly on your Ansible-NAS server
+## Example when running directly on your Infra server
 # ansible-infra ansible_connection=local ansible_host=localhost
 
 [infra]
