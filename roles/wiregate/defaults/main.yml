@@ -1,0 +1,34 @@
+---
+wiregate_enabled: false
+
+# directories
+wiregate_unbound_conf_directory: "{{ docker_home }}/wiregate/unbound/custom.conf.d"
+wiregate_adguard_config_directory: "{{ docker_home }}/wiregate/adguard/conf"
+wiregate_adguard_data_directory: "{{ docker_home }}/wiregate/adguard/data"
+wiregate_dashboard_config_directory: "{{ docker_home }}/wiregate/dashboard/conf"
+wiregate_dashboard_data_directory: "{{ docker_home }}/wiregate/dashboard/data"
+wiregate_dashboard_db_directory: "{{ docker_home }}/wiregate/dashboard/db"
+wiregate_dashboard_iptables_directory: "{{ docker_home }}/wiregate/dashboard/iptables"
+
+# docker
+wiregate_unbound_container_name: "wiregate-unbound"
+wiregate_unbound_container_image_name: "klutchell/unbound"
+wiregate_unbound_container_image_version: "main"
+wiregate_adguard_container_name: "wiregate-adguard"
+wiregate_adguard_container_image_name: "adguard/adguardhome"
+wiregate_adguard_container_image_version: "latest"
+wiregate_dashboard_container_name: "wiregate-dashboard"
+wiregate_dashboard_container_image_name: "noxcis/wg-dashboard"
+wiregate_dashboard_container_image_version: "hydra"
+
+# specs
+wiregate_unbound_memory: 256m
+wiregate_adguard_memory: 1g
+wiregate_dashboard_memory: 1g
+
+# config
+wiregate_dashboard_user: "admin"
+wiregate_dashboard_pass: "admin" # set a secure pass here, since this will be how you access your admin page!
+wiregate_dashboard_server_ip: "0.0.0.0"
+wiregate_dashboard_port_range_startpoint: "41329"
+wiregate_dashboard_port_mappings: "41329-41332:41329-41332/udp"

@@ -164,6 +164,11 @@
     - role: watchtower
       tags:
         - watchtower
+    
+    - role: wiregate
+      tags:
+        - wiregate
+
     - role: youtubedlmaterial
       tags:
         - youtubedlmaterial
