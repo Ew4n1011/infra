@@ -41,7 +41,6 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Vaultwarden](https://github.com/dani-garcia/vaultwarden) - Lightweight Self-Hosting port of Bitwarden password manager, written in Rust
 * [Virtual Desktop](https://hub.docker.com/r/linuxserver/rdesktop) - A virtual desktop running on your server
 * [Watchtower](https://github.com/containrrr/watchtower) - Monitor your Docker containers and update them if a new version is available
-* [Wiregate](https://github.com/NOXCIS/Wiregate) - VPN with Adguard Home DNS AD blocker and Unbound DNS caching
 * [YoutubeDL-Material](https://github.com/Tzahi12345/YoutubeDL-Material) - Self-hosted YouTube downloader built on Material Design
 
 ## Preconfigured Application Stacks
