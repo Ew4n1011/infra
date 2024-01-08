@@ -7,7 +7,7 @@ nextcloud_data_directory: "{{ docker_home }}/nextcloud"
 
 # network
 nextcloud_port: "8080"
-nextcloud_hostname: "nextcloud"
+nextcloud_hostname: "cloud"
 nextcloud_network_name: "nextcloud"
 
 # docker
