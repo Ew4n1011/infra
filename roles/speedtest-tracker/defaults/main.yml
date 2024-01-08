@@ -3,7 +3,8 @@ speedtest_tracker_enabled: false
 speedtest_tracker_available_externally: false
 
 # directories
-speedtest_data_directory: "{{ docker_home }}/speedtest_tracker"
+speedtest_data_directory: "{{ docker_home }}/speedtest_tracker/config"
+speedtest_db_directory: "{{ docker_home }}/speedtest_tracker/db"
 
 # uid / gid
 speedtest_tracker_user_id: "1001"
@@ -12,11 +13,21 @@ speedtest_tracker_group_id: "1001"
 # network
 speedtest_tracker_port: "8765"
 speedtest_tracker_hostname: "speedtest"
+speedtest_tracker_network_name: "speedtest_tracker"
 
 # docker
 speedtest_container_name: "speedtest-tracker"
-speedtest_image_name: "henrywhitaker3/speedtest-tracker"
+speedtest_image_name: "ghcr.io/alexjustesen/speedtest-tracker"
 speedtest_image_version: "latest"
+speedtest_db_container_name: "speedtest-tracker-db"
+speedtest_db_image_name: "mariadb"
+speedtest_db_image_version: "10"
+
+# config
+speedtest_db_name: "speedtest_tracker"
+speedtest_db_user: "speedy"
+speedtest_db_pass: "password"
 
 # specs
 speedtest_tracker_memory: 1g
+speedtest_tracker_db_memory: 1g

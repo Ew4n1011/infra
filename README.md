@@ -33,7 +33,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [Radarr](https://radarr.video) - For organising and downloading movies
 * [Route53 DDNS](https://crazymax.dev/ddns-route53) - Automatically update AWS Route53 with your IP address
 * [Sonarr](https://sonarr.tv) - For downloading and managing TV episodes
-* [Speedtest-Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker) - Continuously track your internet speed
+* [Speedtest-Tracker](https://github.com/alexjustesen/speedtest-tracker) - Continuously track your internet speed
 * [Prometheus](https://prometheus.io) - Time series database and monitoring system (via stats role)
 * Stats - Monitor and visualise metrics about your machine and internet connection using Grafana, Prometheus, Telegraf and more
 * [Syncthing](https://syncthing.net) - Sync directories with another device

@@ -14,20 +14,51 @@
         state: absent
       tags: molecule-idempotence-notest
 
+    - name: Create Speedtest-Tracker network
+      community.docker.docker_network:
+        name: "{{ speedtest_tracker_network_name }}"
+
+    - name: Speedtest-Tracker MariaDB Docker Container
+      community.docker.docker_container:
+        name: "{{ speedtest_db_container_name }}"
+        image: "{{ speedtest_db_image_name }}:{{ speedtest_db_image_version }}"
+        pull: true
+        volumes:
+          - "{{ speedtest_db_directory }}:/var/lib/mysql"
+        env:
+          MARIADB_DATABASE: "{{ speedtest_db_name }}"
+          MARIADB_USER: "{{ speedtest_db_user }}"
+          MARIADB_PASSWORD: "{{ speedtest_db_pass }}"
+          MARIADB_RANDOM_ROOT_PASSWORD: "true"
+        restart_policy: always
+        memory: "{{ speedtest_tracker_db_memory }}"
+        networks:
+          - name: "{{ speedtest_tracker_network_name }}"
+        network_mode: "{{ speedtest_tracker_network_name }}"
+
     - name: Speedtest-Tracker Docker Container
       community.docker.docker_container:
         name: "{{ speedtest_container_name }}"
         image: "{{ speedtest_image_name }}:{{ speedtest_image_version }}"
         pull: true
         volumes:
-          - "{{ speedtest_data_directory }}/config:/config:rw"
+          - "{{ speedtest_data_directory }}/config:/config"
         ports:
           - "{{ speedtest_tracker_port }}:80"
         env:
-          OOKLA_EULA_GDPR: "true"
-          TZ: "{{ ansible_infra_timezone }}"
+          PUID: "{{ speedtest_tracker_user_id }}"
+          GUID: "{{ speedtest_tracker_group_id }}"
+          DB_CONNECTION: "mysql"
+          DB_HOST: "{{ speedtest_db_container_name }}"
+          DB_PORT: "3306"
+          DB_DATABASE: "{{ speedtest_db_name | string }}"
+          DB_USERNAME: "{{ speedtest_db_user }}"
+          DB_PASSWORD: "{{ speedtest_db_pass }}"
         restart_policy: unless-stopped
-        memory: "1g"
+        memory: "{{ speedtest_tracker_memory }}"
+        networks:
+          - name: "{{ speedtest_tracker_network_name }}"
+        network_mode: "{{ speedtest_tracker_network_name }}"
         labels:
           traefik.enable: "{{ speedtest_tracker_available_externally | string }}"
           traefik.http.routers.speedtest_tracker.rule: "Host(`{{ speedtest_tracker_hostname }}.{{ ansible_infra_domain }}`)"
