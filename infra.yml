@@ -97,6 +97,10 @@
       tags:
         - jellyseerr
 
+    - role: lidarr
+      tags:
+        - lidarr
+
     - role: minecraft-server
       tags:
         - minecraft-server

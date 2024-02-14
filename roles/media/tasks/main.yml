@@ -6,6 +6,7 @@
         bazarr_enabled: true
         jellyfin_enabled: true
         jellyseerr_enabled: true
+        lidarr_enabled: true
         prowlarr_enabled: true
         qbittorrent_enabled: true
         radarr_enabled: true
@@ -20,6 +21,7 @@
         bazarr_enabled: false
         jellyfin_enabled: false
         jellyseerr_enabled: false
+        lidarr_enabled: false
         prowlarr_enabled: false
         qbittorrent_enabled: false
         radarr_enabled: false

@@ -44,6 +44,7 @@
   with_items:
     - "{{ media_root }}/tv"
     - "{{ media_root }}/movies"
+    - "{{ media_root }}/music"
     - "{{ media_root }}/books"
     - "{{ media_root }}/photos"
     - "{{ media_root }}/documents"
