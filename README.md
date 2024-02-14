@@ -24,6 +24,7 @@ If you have a spare domain name you can configure applications to be accessible 
 * [healthchecks.io](https://healthchecks.io) - Ensure your machine is online and get notified otherwise
 * [Jellyfin](https://jellyfin.github.io) - The Free Software Media System
 * [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) - Open source software application for managing requests for your media library
+* [Komga](https://komga.org) - a media server for your comics, mangas, BDs and magazines
 * [Lidarr](https://github.com/lidarr/Lidarr) - Music collection manager for Usenet and BitTorrent users
 * [Minecraft Server](https://www.minecraft.net) - Server edition of the popular building and exploring game
 * [Nextcloud](https://nextcloud.com) - A self-hosted Dropbox alternative
