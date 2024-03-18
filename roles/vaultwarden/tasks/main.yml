@@ -40,7 +40,7 @@
           traefik.http.routers.vaultwarden-ws.service: "vaultwarden-ws"
           traefik.http.routers.vaultwarden-ws.middlewares: "vaultwarden-ipwhitelist@docker"
           traefik.http.services.vaultwarden-ws.loadbalancer.server.port: "3012"
-          traefik.http.middlewares.vaultwarden-ipwhitelist.ipwhitelist.sourcerange: "{{ vaultwarden_ip_whitelist }}"
+          traefik.http.middlewares.vaultwarden-ipwhitelist.ipallowlist.sourcerange: "{{ vaultwarden_ip_whitelist }}"
         restart_policy: unless-stopped
         memory: "{{ vaultwarden_memory }}"
 
