@@ -38,11 +38,11 @@
         memory: "{{ ddns_updater_memory }}"
         labels:
           traefik.enable: "{{ ddns_updater_available_externally }}"
-          traefik.http.routers.airsonic.rule: "Host(`{{ ddns_updater_hostname }}.{{ ansible_infra_domain }}`)"
-          traefik.http.routers.airsonic.tls.certresolver: "letsencrypt"
-          traefik.http.routers.airsonic.tls.domains[0].main: "{{ ansible_infra_domain }}"
-          traefik.http.routers.airsonic.tls.domains[0].sans: "*.{{ ansible_infra_domain }}"
-          traefik.http.services.airsonic.loadbalancer.server.port: "8000"
+          traefik.http.routers.ddns-updater.rule: "Host(`{{ ddns_updater_hostname }}.{{ ansible_infra_domain }}`)"
+          traefik.http.routers.ddns-updater.tls.certresolver: "letsencrypt"
+          traefik.http.routers.ddns-updater.tls.domains[0].main: "{{ ansible_infra_domain }}"
+          traefik.http.routers.ddns-updater.tls.domains[0].sans: "*.{{ ansible_infra_domain }}"
+          traefik.http.services.ddns-updater.loadbalancer.server.port: "8000"
   when: ddns_updater_enabled is true
 
 - name: Stop DDNS Updater
