@@ -13,3 +13,6 @@
 ansible_infra_hostname: infra-test
 ansible_infra_timezone: Europe/Madrid
 ansible_infra_user: vagrant
+
+# Mymediaforalexa
+mymediaforalexa_enabled: true

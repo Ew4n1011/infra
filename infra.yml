@@ -113,6 +113,10 @@
       tags:
         - minecraft-bedrock-server
 
+    - role: mymediaforalexa
+      tags:
+        - mymediaforalexa
+
     - role: nextcloud
       tags:
         - nextcloud

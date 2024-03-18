@@ -4,7 +4,7 @@ lidarr_available_externally: false
 
 # directories
 lidarr_data_directory: "{{ docker_home }}/lidarr/config"
-lidarr_media_directory: "{{ media_root }}"
+lidarr_media_directory: "{{ media_root }}/music"
 lidarr_downloads_directory: "{{ downloads_root }}"
 
 # uid/gid
