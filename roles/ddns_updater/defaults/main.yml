@@ -7,7 +7,7 @@ ddns_updater_data_directory: "{{ docker_home }}/ddns_updater"
 
 # network
 ddns_updater_port: 8202
-ddns_updater_hostname: "ddns-updater"
+ddns_updater_hostname: "ddns"
 
 # docker
 ddns_updater_container_name: ddns_updater
